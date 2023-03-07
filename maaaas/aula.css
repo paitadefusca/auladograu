@@ -1,0 +1,52 @@
+body{
+  background-color: cyan;
+}
+.foda{
+  width: 50%;
+}
+.principal{
+    background: #87CEFA;
+  }
+.titulo-principal{
+  text-align: center;
+  font-size: 35px;
+  color: blue;
+}
+.titulo2{
+  text-align: center;
+  color: blue;
+}
+#missao{
+  color: purple;
+  font-size: 20px;
+}
+#missao2{
+  color: purple;
+  font-size: 20px;
+}
+#missao3{
+  color: purple;
+  font-size: 20px;
+  font-style: italic;
+}
+.titulo3{
+  text-align: center;
+  font-size: 35px;
+  color: blue;
+  font-style: italic;
+}
+.itens{
+  color: blue;
+  font-style: italic;
+  background: #87CEfA;
+  font-size: 20px;
+}
+ul{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%
+}
+.ronaldo{
+  width: 50%;
+}
