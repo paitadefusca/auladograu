@@ -34,9 +34,8 @@ body{
   font-style: italic;
 }
 .itens{
-  color: blue;
+  color: gold;
   font-style: italic;
-  background: #87CEfA;
   font-size: 20px;
 }
 ul{
@@ -57,5 +56,5 @@ ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-background-attachment: fixed;
+  background-attachment: fixed;
 }
