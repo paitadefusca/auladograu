@@ -76,3 +76,15 @@ form label, form legend{
   background: linear-gradient(90deg, rgba(255,158,0,1) 0%, rgba(236,226,8,1) 35%, rgba(127,255,110,1) 100%);
   transform: scale(1.2);
 }
+table{
+  margin: 20px 0 40px;
+}
+thead{
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+td, th{
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
