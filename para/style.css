@@ -78,13 +78,15 @@ form label, form legend{
 }
 table{
   margin: 20px 0 40px;
+  color: white;
 }
 thead{
   background: #555555;
   color: white;
   font-weight: bold;
+  color: white;
 }
 td, th{
-  border: 1px solid #000000;
+  border: 4px solid white;
   padding: 8px 15px;
 }
