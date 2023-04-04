@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="farm.css">
+  </head>
+  <body>
+    <main>
+    <h2 class="h2"> Formulário </h2>
+
+    <form>
+
+        <label for="nomesobrenome"> Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+        <label for="email"> Email</label>
+        <input type="email" id="email" class="input-padrao"required placeholder="seuemail@dominio.com">
+
+        <label for="telefone"> Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao"required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="rg"> RG</label>
+        <input type="rg" id="telefone" class="input-padrao"required placeholder="Seu RG">
+
+        <label for="cidade">Cidade</label>
+        <input type="cidade" id="cidade" class="input-padrao"required placeholder="Sua cidade">
+
+
+        <fieldset>
+          <legend>Como você prefere receber nossas mensagens?</legend>
+          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+          <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+          <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+        </fieldset>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Esporte</th>
+              <th>Posição</th>
+              <th>Estilo de jogo</th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr>
+              <td>Futebol</td>
+              <td>Atacante</td>
+              <td>Pivo</td>
+            </tr>
+            <tr>
+              <td>Futebol</td>
+              <td>Ponta</td>
+              <td>Ala</td>
+            </tr>
+            <tr>
+              <td>Futebol</td>
+              <td>Meio Campo</td>
+              <td>Armador</td>
+            </tr>
+            <tr>
+              <td>Futebol</td>
+              <td>Zagueiro</td>
+              <td>Defensor</td>
+            </tr>
+            <tr>
+              <td>Futebol</td>
+              <td>Goleiro</td>
+              <td>Salvador</td>
+            </tr>
+      </tbody>
+        </table>
+
+
+
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+   </form>
+
+
+  </body>
+</html>
