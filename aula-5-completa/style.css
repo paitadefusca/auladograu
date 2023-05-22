@@ -92,12 +92,6 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
-
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     margin: 40px 0;
 }
@@ -147,7 +141,12 @@ form label, form legend {
     margin: 0 0 1em;
 		clear: left;
 }
-
+.principal{
+  padding: 3em 0;
+  background-color: #FEFEFE;
+  width: 940px;
+  margin: 0 auto;
+}
 .principal p{
     margin:0 0 1em;
 }
@@ -174,6 +173,13 @@ form label, form legend {
 .itens{
     line-height: 1.5;
 }
+.itens: nth-child(2n){
+  font-weight: bold;
+}
+.beneficios{
+  padding: 3em 0;
+  background-color: #888888;
+}
 .imagembeneficios{
 	width: 60%;
 }
@@ -182,10 +188,15 @@ form label, form legend {
 }
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
 }
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
+}
+.mapa-conteudo{
+  width: 940;
+  margin: 0 auto;
 }
 .video{
     width: 560px;
