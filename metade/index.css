@@ -1,0 +1,11 @@
+body{
+  background: FFFFFF;
+}
+.parteum{
+  margin: 0 auto;
+  background: linear-gradient(45deg, blue, red, orange, yellow, green, pink)
+}
+.partedois{
+  margin: 0 auto;
+    background: linear-gradient(-45deg, blue, red, orange, yellow, pink)
+}
