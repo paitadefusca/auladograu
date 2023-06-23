@@ -1,0 +1,22 @@
+@media screen and (max-width: 480px){
+  .caixa, .principal, .conteudo-principal, .mapa-conteudo, .video{
+      width: auto;
+    }
+    h1{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+    #imagem{
+      border-radius: 20px;
+    }
+}
+.mapa-conteudo{
+  padding: 3em 0;
+}
+.imagens{
+  opacity: 1;
+  color: rgb(0, 0, 0, 0, 0.3);
+  box-shadow: 10px, 10px, 50px, 20px, #CCCCCC;
+}
