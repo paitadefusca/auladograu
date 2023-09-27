@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola teste</title>
+    <link rel="stylesheet" href="bola.css">
+
+    </head>
+    <body>
+    <div id="bola"></div>
+    
+    <script>
+        var bola = document.getElementById("bola");
+        var x = 0; // Inicial - posição horizontal
+        var y = 0; // Inicial - posição vertical
+        var velocidadeX = 2; // Velocidade horizontal
+        var velocidadeY = 2; // Velocidade vertical
+    
+        function moverBola() {
+            // Atualiza a posição da bola
+            x += velocidadeX;
+            y += velocidadeY;
+    
+            // Verifica as colisões com as bordas da janela
+            if (x + bola.offsetWidth > window.innerWidth || x < 0) {
+                velocidadeX *= -1; // Inverte a direção horizontal
+            }
+    
+            if (y + bola.offsetHeight > window.innerHeight || y < 0) {
+                velocidadeY *= -1; // Inverte a direção vertical
+            }
+    
+            // Aplica a nova posição à bola
+            bola.style.left = x + "px";
+            bola.style.top = y + "px";
+    
+            // Chama a função novamente em breve para criar uma animação contínua
+            requestAnimationFrame(moverBola);
+        }
+    
+        // Inicia a animação
+        moverBola();
+    </script>
+
+    <div id="bola2"></div>
+    
+    <script>
+        var bola2 = document.getElementById("bola");
+        var x = 0; // Inicial - posição horizontal
+        var y = 0; // Inicial - posição vertical
+        var velocidadeX = 2; // Velocidade horizontal
+        var velocidadeY = 2; // Velocidade vertical
+    
+        function moverBola() {
+            // Atualiza a posição da bola
+            x += velocidadeX;
+            y += velocidadeY;
+    
+            // Verifica as colisões com as bordas da janela
+            if (x + bola.offsetWidth > window.innerWidth || x < 0) {
+                velocidadeX *= -1; // Inverte a direção horizontal
+            }
+    
+            if (y + bola.offsetHeight > window.innerHeight || y < 0) {
+                velocidadeY *= -1; // Inverte a direção vertical
+            }
+    
+            // Aplica a nova posição à bola
+            bola.style.left = x + "px";
+            bola.style.top = y + "px";
+    
+            // Chama a função novamente em breve para criar uma animação contínua
+            requestAnimationFrame(moverBola);
+        }
+    
+        // Inicia a animação
+        moverBola();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+#bola {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%; /* Torna a div redonda */
+    position: absolute;
+}
+#bola2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 174, 255);
+    border-radius: 50%; /* Torna a div redonda */
+    position: absolute;
+}

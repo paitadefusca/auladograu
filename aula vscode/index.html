@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Kaliel GOD</title>
+    <style>
+        #banner {
+            width: 100%;
+            height: 100px;
+            background-color: #481e96;
+            color: #f7e602;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #mensagem {
+            position: absolute;
+            left: -200px; /* Inicialmente, a mensagem está fora da tela à esquerda */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div id="mensagem">Deus Kaliel</div>
+    </div>
+
+    <script>
+        var mensagemElement = document.getElementById("mensagem");
+        var bannerWidth = document.getElementById("banner").offsetWidth;
+    
+        function animarMensagem() {
+            var left = -200; // Inicializa a posição à esquerda da tela
+            var interval = setInterval(function() {
+                left += 5; // Move 5 pixels à direita a cada iteração
+                mensagemElement.style.left = left + "px";
+    
+                // Verifica se a mensagem atingiu o final do banner
+                if (left >= bannerWidth) {
+                    clearInterval(interval); // Para a animação
+                    setTimeout(function() {
+                        mensagemElement.style.left = "-200px"; // Reinicia a mensagem à esquerda
+                        animarMensagem(); // Inicia a animação novamente
+                    }, 1000); // Espera 1 segundo antes de reiniciar
+                }
+            }, 30); // Intervalo de 30 milissegundos para suavizar a animação
+        }
+    
+        animarMensagem(); // Inicia a animação quando a página carrega
+    </script>
+
+    <h2>Hoje falaremos sobre o ser mais poderoso de toda a existencia, Kaliel. Vou mostrar um exemplo de seu poder.</h2>
+
+    <div class="kaliel">
+
+    <img src="bigbang.jpg">
+
+    <h3>Esta bela cena foi o Kaliel que criou usando seus poderes, essa cena reverencia uma pequena parte do universo, onde tudo foi criado por ele.</h3>
+
+    </div>
+
+</body>
+</html>
