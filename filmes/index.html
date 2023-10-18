@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Banner Animado</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #banner {
+            width: 100%;
+            height: 100px;
+            background-image: url(banner.jpg);
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #mensagem {
+            position: absolute;
+            left: -200px; /* Inicialmente, a mensagem está fora da tela à esquerda */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+<div id="banner">
+    <div id="mensagem">Bem vindo ao cinema CineMania!</div>
+</div>
+
+<script>
+    var mensagemElement = document.getElementById("mensagem");
+    var bannerWidth = document.getElementById("banner").offsetWidth;
+
+    function animarMensagem() {
+        var left = -200; // Inicializa a posição à esquerda da tela
+        var interval = setInterval(function() {
+            left += 5; // Move 5 pixels à direita a cada iteração
+            mensagemElement.style.left = left + "px";
+
+            // Verifica se a mensagem atingiu o final do banner
+            if (left >= bannerWidth) {
+                clearInterval(interval); // Para a animação
+                setTimeout(function() {
+                    mensagemElement.style.left = "-200px"; // Reinicia a mensagem à esquerda
+                    animarMensagem(); // Inicia a animação novamente
+                }, 1000); // Espera 1 segundo antes de reiniciar
+            }
+        }, 30); // Intervalo de 30 milissegundos para suavizar a animação
+    }
+
+    animarMensagem(); // Inicia a animação quando a página carrega
+</script>
+
+    <div class="caixa">
+
+    <h1>Temos atualmente nos cartazes:</h1>
+
+    <main>
+        <ul class="produtos">
+           <li>
+             <h2>Top Gun: Maverick</h2>
+             <img class="filmes" src="maverick.jpg">
+             <p class="produto-descricao"> Um ótimo filme de ação e aventura!</p>
+           </li>
+
+             <li>
+                <h2>Pantera Negra: Wakanda para Sempre</h2>
+                <img class="filmes" src="wakanda.jpg">
+                <p class="produto-descricao"> Continuação da história do Pantera Negra com um filme incrível!</p>
+            </li>
+
+            <li>
+                <h2>Avatar: O Caminho da Água</h2>
+                <img class="filmes" src="avatar.jpg">
+                <p class="produto-descricao"> Uma continuação espetacular do primeiro filme de Avatar, um filme longo porem muito atrativo que mantém o público atento durante toda a longa metragem!</p>
+            </li>
+       </ul>
+
+      
+    </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+  }
+  nav{
+    position: absolute;
+    top: 110px;
+    right: 0;  margin: auto;
+  }
+  nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  main{
+    width: 940px;
+    margin: 0 auto;
+  }
+  .h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px 0 25px 0;
+    color: white;
+  }
+  .filmes{
+    width: 400px;
+  }
